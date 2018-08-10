@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123370606-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123370606-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RudyCon - @ViewBag.Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+
+    @Styles.Render("~/galery/jquery.vm-carousel.css")
+    @Styles.Render("~/css/bootstrap.css")
+    @Styles.Render("~/css/modern-business.css")
+    @Styles.Render("~/css/media.css")
+    @Styles.Render("~/css/StyleSheet1.css")
+  
+</head>
+<body>
+    <div class="header col-lg-12 col-md-12 col-sm-12">
+        <center><a href="/"><img src=\images\shapka-01.jpg></a></center>
+    </div>
+
+    @RenderBody()
+
+    <div class="footer">
+        <div class="social col-lg-12 col-md-12 col-sm-12">
+            <center>
+                <div class="wrapper">
+                    <ul>
+                        <li class="vk">
+                            <a href="https://vk.com/rudyconvitebskgroup"><i class="fab fa-vk fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/rudyconby/"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UCMUbRXkKwUPuWQxOUwxNdJA"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+        <div class="text col-md-12 col-lg-12 col-sm-12">
+            <center><p>&copy;RudyCon 2018</p></center>
+        </div>
+    </div>
+    <!-- /.container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="@Url.Content("/js/bootstrap.js")"></script>
+</body>
+</html>
