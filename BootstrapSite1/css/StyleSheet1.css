@@ -5,6 +5,10 @@
     margin: 0px 0px 0px 0px;
 }
 
+iframe{
+    width: 100%;
+}
+
 @font-face{
     font-family: "DaggerC Regular"; /* Имя шрифта */
     src: url(/fonts/MainFonts/DAGGERC.otf) /* Путь к файлу со шрифтом */
@@ -56,7 +60,7 @@ a{
 
 .partners {
     opacity: 1;
-    margin: 20px 0 20px 0;
+    margin: 10px 0px;
     padding: 0 10px;
     height:auto;
     max-width:250px;
